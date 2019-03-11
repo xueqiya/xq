@@ -1,10 +1,11 @@
 package com.yiya.xq.bean;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "users")
-public class UserBean {
+public class UserBean implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
