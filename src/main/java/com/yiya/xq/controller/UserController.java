@@ -18,8 +18,10 @@ public class UserController {
     public ResultBean login(UserBean userBean) {
         return userService.login(userBean);
     }
+
     @RequestMapping(value = "/register")
     public ResultBean register(UserBean userBean) {
         return userService.register(userBean);
     }
+
 }

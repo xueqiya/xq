@@ -2,6 +2,9 @@ package com.yiya.xq.utils;
 
 import com.yiya.xq.bean.ResultBean;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class ResultUtil {
 
 
@@ -24,7 +27,9 @@ public class ResultUtil {
     }
 
     public static ResultBean success(){
-        return success(null);
+        Map map = new HashMap();
+        map.put("state", "success");
+        return success(map);
     }
 
     //当错误时返回的值
